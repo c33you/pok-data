@@ -1,0 +1,11 @@
+{
+"$schema":{"files":{"rules":"00_rules.json","dex_master":"10_pokedex_master.json","dex_tags":"10_dex_tags.json","idx_type":"10_idx_by_type.json","idx_env":"11_idx_by_env.json","idx_terrain":"12_idx_by_terrain.json","moves":"20_move.json","items":"21_items.json","npcs":"22_npcs.json","region":"30_region.json","natures":"23_natures.json","logs":"02_logs.json"},"paths":{"type_chart":"00_rules.json > game_systems.type_effectiveness","stance_system":"00_rules.json > game_systems.stance_system","bond_system":"00_rules.json > game_systems.bond_system","narrative_health":"00_rules.json > game_systems.narrative_health","dex_list":"10_pokedex_master.json > pokemon","dex_tag_map":"10_dex_tags.json > map[<id>]"},"contracts":{"must_consult":["00_rules.json","01_save_data.json"],"encounter_rule":"Seed encounters from env∩terrain via indices; fetch ≤3 species from dex_master by id.","conflicts":{"mechanics_vs_any":"prefer rules","state_vs_reference":"prefer save_data","reference_vs_reference":"prefer env/terrain match"}}},
+"pi":{"n":"Player","loc":{"n":"Blackthorn City","tags":["Urban"]},"tod":"Morning","wx":"Clear","money":0},
+"active_partners":["Tyrant"],
+"pty":[{"id":"246","nick":"Tyrant","species":"Larvitar","nat":["Sassy","Bold"],"bnd":"Soul Bond","stance":null,"status_block":{"health":"Healthy","ailments":[]},"mvs":["bite","leer","sandstorm","rock_slide"],"shiny":true,"variant":"Crimson-black"}],
+"bag":{"items":[]},
+"flags":{},
+"ws":{"encounter_pool":[],"last_encounter_src":null},
+"log":[],
+"meta":{"engine":"Pokemon Journey","version":"save.v2","updated":"2025-08-08T07:43:13.880002Z"}
+}

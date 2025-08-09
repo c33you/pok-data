@@ -1,0 +1,52 @@
+{
+  "must_consult": [
+    "00_rules.json",
+    "01_save_data.json"
+  ],
+  "priority_order": [
+    "00_rules.json",
+    "01_save_data.json",
+    "02_logs.json",
+    "10_pokedex_master.json",
+    "10_dex_tags.json",
+    "11_idx_by_env.json",
+    "12_idx_by_terrain.json",
+    "20_move.json",
+    "21_items.json",
+    "22_npcs.json",
+    "23_natures.json",
+    "30_region.json"
+  ],
+  "rules": {
+    "absolute_truth": [
+      "00_rules.json",
+      "01_save_data.json",
+      "02_logs.json",
+      "10_pokedex_master.json",
+      "20_move.json",
+      "21_items.json",
+      "22_npcs.json",
+      "23_natures.json",
+      "30_region.json"
+    ],
+    "secondary_lookup": [
+      "10_dex_tags.json",
+      "11_idx_by_env.json",
+      "12_idx_by_terrain.json"
+    ]
+  },
+  "notes": {
+    "00_rules.json": "Highest authority. Mechanics, combat cascade, and narrative systems.",
+    "01_save_data.json": "Current world + party state. Overrides reference data where conflict exists.",
+    "02_logs.json": "Player actions and event history.",
+    "10_pokedex_master.json": "Full species reference.",
+    "10_dex_tags.json": "Tag mapping for species.",
+    "11_idx_by_env.json": "Species index by environment.",
+    "12_idx_by_terrain.json": "Species index by terrain.",
+    "20_move.json": "Full move data.",
+    "21_items.json": "Item database.",
+    "22_npcs.json": "NPC database.",
+    "23_natures.json": "Nature definitions.",
+    "30_region.json": "Region and location data."
+  }
+}
